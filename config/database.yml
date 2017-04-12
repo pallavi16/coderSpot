@@ -6,12 +6,15 @@
 #
 default: &default
   adapter: postgresql
-
+ pool: 5
+ timeout: 5000
 
 development:
   <<: *default
   adapter: postgresql
   database: bookstore_development/postgresql
+  username: root
+  password: p123
   
 
 # Warning: The database defined as "test" will be erased and
@@ -21,6 +24,9 @@ test:
   <<: *default
   adapter: postgresql
   database: bookstore_development/postgresql
+  username: root
+  password: p123
+
 
 production:
   <<: *default
