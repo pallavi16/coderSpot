@@ -12,9 +12,6 @@ development:
   <<: *default
   adapter: postgresql
   database: bookstore_development/postgresql
-  username: root
-  password: p123
-  host: 127.0.0.1
   socket: /Applications/XAMPP/xamppfiles/var/mysql/mysql.sock
 
 
@@ -25,9 +22,6 @@ test:
   <<: *default
   adapter: postgresql
   database: bookstore_development/postgresql
-  username: root
-  password: p123
-  host: 127.0.0.1
 
 production:
   <<: *default
