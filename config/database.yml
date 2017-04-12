@@ -5,13 +5,13 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
 
 
 development:
   <<: *default
-  adapter: sqlite3
-  database: bookstore_development/sqlite3
+  adapter: postgresql
+  database: bookstore_development/postgresql
   username: root
   password: p123
   host: 127.0.0.1
@@ -23,8 +23,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  adapter: sqlite3
-  database: bookstore_development/sqlite3
+  adapter: postgresql
+  database: bookstore_development/postgresql
   username: root
   password: p123
   host: 127.0.0.1
