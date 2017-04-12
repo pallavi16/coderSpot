@@ -30,4 +30,4 @@ test:
 
 production:
   <<: *default
-  database: db/production.postgresql
+  database: bookstore_development.postgresql
