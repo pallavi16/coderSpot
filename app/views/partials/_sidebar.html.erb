@@ -1,0 +1,24 @@
+
+<% if params[:controller] == 'about' %>
+
+<div class ="well">
+<h3>Location Info:</h3>
+<ul>
+<li>The Bookstore </li>
+<li>500 East 832 South</li>
+<li>Salt Lake City, UT 84102</li>
+<li>Phone: (801)998-3453</li>
+<li>Email: support@thebookstore.com</li>
+</ul>
+</div>
+<% end %>
+
+<% if params[:controller] == 'books' && params[:action] =='index' || params[:action] =='show' %>
+
+<div class="list-group">
+	<% @categories.each do |category|%>
+	  <%= link_to category.name, category_path(category.id), class:'list-group-item' %>
+<%end%>	  
+ 
+</div>
+<%end%>
