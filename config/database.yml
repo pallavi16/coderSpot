@@ -9,7 +9,7 @@ default: &default
   encoding: utf8
   username: root
   password: p123
-  port: 3306
+  host: localhost
 
 development:
   <<: *default
