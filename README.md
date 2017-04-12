@@ -1,25 +1,4 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # coderSpot
+
+A ruby on rails application for adding, managing books relevant for all programmers, code savvy people. This platform provides a wide range of books that can be viewed by users. New books can be added based on the author name, publisher name, book name. Books can be added, deleted, updated to the application based on its category. The home page lists all kinds of available books.
