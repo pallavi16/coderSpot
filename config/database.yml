@@ -10,22 +10,21 @@ default: &default
   timeout: 5000
 
 development:
-  <<: *default
   adapter: mysql2
   database: bookstore_development
-  username: root
-  password: p123
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-  adapter: mysql2
-  database: bookstore_development
-  username: root
-  password: p123
+  adapter: sqlite3
+  database: bookstore_development.sqlite3
+  pool: 5
+  timeout: 5000
 
 production:
-  <<: *default
+  adapter: postgresql
   database: db/production.sqlite3
+  pool: 5
+  timeout: 5000
